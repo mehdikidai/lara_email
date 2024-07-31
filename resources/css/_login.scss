@@ -1,0 +1,63 @@
+.box_login{
+    min-height: 100vh;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns:1fr 700px;
+    .box_photo{
+        background: #1c4f4a;
+    }
+    .box_form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+
+        .titl{
+            max-width: 380px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h1{
+                font-size: 35px;
+                text-transform: uppercase;
+                color: #1c4f4a;
+            }
+            h3{
+                text-transform: capitalize;
+                color: #757575;
+                font-size: 16px;
+            }
+        }
+        #login_a{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            //background: red;
+            max-width: 380px;
+            width: 90%;
+            .bx{
+                height: 40px;
+                //background: blue;
+                input{
+                    width: 100%;
+                    height: 40px;
+                    padding-inline: 10px;
+                    border: 1px solid #ccc;
+                    &:focus,&:active{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                button{
+                    width: 100%;
+                    height: 40px;
+                    border: none;
+                    background: #1c4f4a;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
